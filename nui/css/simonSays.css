@@ -1,0 +1,26 @@
+.squares-container{
+    width: 372px;
+    height: 372px;
+    display:grid;
+    grid-template-columns:33% 33% 33%;
+    grid-template-rows:33% 33% 33%;
+    gap: .5rem;
+    padding:2rem;
+    background-color:#222;
+    border-radius:.3rem
+}
+
+.square{
+    width:124px;
+    height:124px;
+    border-radius:.2rem;
+    opacity:0;
+    transition:opacity .3s;
+    background-color: rgb(25, 113, 194);
+}
+
+.user-square{
+    opacity: 1;
+    background-color: rgb(25, 113, 194);
+}
+

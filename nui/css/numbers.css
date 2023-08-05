@@ -1,0 +1,36 @@
+:root{
+    --button-background:#8fa1d1;
+    --button-color: #2b3c68;
+    --container-background: #153b9e;
+    --container-border: #41413f;
+    --outer-background: #aaaaaa;
+    --outer-border: #666865;
+    --activate-color: #01a041;
+    --pipe-color: #535b65;
+    --pipe-dark-color: #1b2033;
+  }
+  
+
+.numbers-container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: 100px 100px;
+    transform: translate(-50% -50%);
+}
+
+.numbers-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 4px;
+    background-color: var(--button-background);
+    color: var(--button-color) 
+}
+
+.active-number{
+    background-color: var(--activate-color);
+}

@@ -1,0 +1,110 @@
+@import"https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap";
+@import url('simonSays.css');
+@import url('numbers.css');
+@import url('shuffleNumbers.css');
+
+
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    font-family:"IBM Plex Sans",sans-serif
+}
+::-webkit-scrollbar{
+    display:none
+}
+body{
+    height:100vh
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    align-items:center;
+    justify-content:center;
+    align-content: center;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.container-terminal{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: azure;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+.container-terminal img{
+    margin-left: 1%;
+}
+
+.command-text{
+    color: #0e0e0e;
+    font-weight: 600;
+    margin-left: 1%;
+}
+
+.container-hack{
+    width: 64rem;
+    height: 48rem;
+    background-color:#0e0e0e;
+    padding:10px;
+    position:relative;
+    border-radius: 5px;
+  
+}
+
+.footer{
+    width: 64rem;
+    position:absolute;
+    bottom:10px;
+}
+
+.progress-container{
+    height:4px;
+    width:100%;
+    background-color:#222;
+    border-radius:5px
+}
+
+.progress-bar{
+    height:4px;
+    background-color:rgb(25, 113, 194);
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px
+}
+
+.container-hack--main{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin-left: 5%; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container-hack--text{
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+    color:#fff;
+    flex-direction:column;
+}
+
+.container-hack--info{
+    font-size:20px;
+    display:flex;
+    height: 48rem;
+    color: #017426;;
+    overflow: hidden;
+}
