@@ -44,7 +44,7 @@ function shuffleNumbersButtons(){
 }
 
 function enableButtons(){
-    panelButtons.map((button, index) => {
+    panelButtons.map((button) => {
         button.onclick = handleButtonClick;
       })
 }

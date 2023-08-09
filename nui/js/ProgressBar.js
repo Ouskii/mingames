@@ -4,7 +4,7 @@ const hackContainer = document.querySelector('.container-hack--main')
 const hackInfo = document.querySelector('.container-hack--info')
 const hackText = document.querySelector('.container-hack--text')
 const container = document.querySelector('.container')
-import { gameOver } from "./gameStates.js";
+import { gameOver, gameWin } from "./gameStates.js";
 import { apiPost } from "./utils.js";
 import { interval } from "./gameStates.js";
 
@@ -35,6 +35,11 @@ export function ProgressBarInterval(type, time, gameToInit = "", __timePlay = 0,
                 return;
             }
             if (type =='game'){
+                if(gameToInit == "SQUARES"){
+                    gameWin()
+                    return;
+                }
+                
                 gameOver()
                 return;
             }    

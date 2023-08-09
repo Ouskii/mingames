@@ -2,7 +2,7 @@
 @import url('simonSays.css');
 @import url('numbers.css');
 @import url('shuffleNumbers.css');
-
+@import url('square.css');
 
 *,*::after,*::before{
     margin:0;

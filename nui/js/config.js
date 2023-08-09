@@ -15,3 +15,10 @@ export const Numbers = {
 export const ShuffleNumbers = {
     size : 20 // how many numbers to match must be devided by 5! 
 }
+
+
+export const squares = {
+    squaresSpawnTime : 300,
+    defaultMaxsquare : 10,
+
+}
